@@ -10,6 +10,7 @@ final colorScheme = ColorScheme.fromSeed(
 );
 
 final theme = ThemeData().copyWith(
+  appBarTheme: AppBarTheme(foregroundColor: colorScheme.onSurfaceVariant),
   scaffoldBackgroundColor: colorScheme.onSurface,
   colorScheme: colorScheme,
   textTheme: GoogleFonts.ubuntuCondensedTextTheme().copyWith(
@@ -18,6 +19,7 @@ final theme = ThemeData().copyWith(
     ),
     titleMedium: GoogleFonts.ubuntuCondensed(
       fontWeight: FontWeight.bold,
+      color: colorScheme.onSurfaceVariant
     ),
     titleLarge: GoogleFonts.ubuntuCondensed(
       fontWeight: FontWeight.bold,
